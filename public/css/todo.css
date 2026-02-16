@@ -1,0 +1,135 @@
+html{ 
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(50deg, green 50%, #E4E9FD 50%);
+    font-family: 'helvetica neue';
+    min-height: 100vh;
+}
+h1{ 
+    color: #fff;
+    padding: 10px;
+}
+#heading{ 
+    background-color: green;
+    text-align: center;
+}
+.box{ 
+    max-width: 400px;
+    border-radius: 5px;
+    margin: 50px auto;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+    background: #fff;
+}
+
+#progressText{ 
+     text-align: center;
+}
+
+.box p{ 
+    text-align: left;
+}
+
+.item{ 
+    min-height: 70px;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+    display: flex;
+}
+.item:last-child{
+    border-bottom: 0;
+}
+p{ 
+    text-align: center;
+    margin:0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: 00204a;
+}
+input[type="checkbox"]{ 
+    margin: 20px;
+}
+input:checked+p{ 
+    text-decoration: line-through;
+    text-decoration-color: green;
+}
+input[type="text"]{ 
+    width: 313px;
+    height: 60px;
+    text-align: center;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: 200;
+    font-size: 20px;
+}
+input[type="text"]:focus{ 
+    outline: none;
+    box-shadow: inset 0 -5px 0 0 green;
+}
+::placeholder{ 
+    color:grey;
+    opacity: 1;
+}
+form{
+    margin-left: 20px;
+    text-align: center;
+}
+button{ 
+    width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: green;
+    font-size: 30px;
+    border-width: 0;
+    color: #fff;
+    padding-bottom: 2px;
+}
+footer{ 
+    color: #fff;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.progress {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* In progress (orange) */
+.in-progress {
+    color: orange;
+}
+
+/* Completed (green) */
+.completed {
+    color: #2ecc71;
+}
+
+.start {
+    color: red;
+}
+/* DELETE BUTTON */
+.item {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+/* Push delete icon to the right */
+.item i{
+    margin-left: auto;   
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #dc3545;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.item input:hover i {
+    color: #a71d2a;
+    transform: scale(1.1);
+}
