@@ -13,9 +13,10 @@ h1{
     text-align: center;
 }
 .box{ 
+    width: 92%;
     max-width: 400px;
-    border-radius: 5px;
-    margin: 50px auto;
+    border-radius: 10px;
+    margin: 20px auto;
     box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
     background: #fff;
 }
@@ -53,7 +54,8 @@ input:checked+p{
     text-decoration-color: green;
 }
 input[type="text"]{ 
-    width: 313px;
+    width: 100%;
+    flex: 1;
     height: 60px;
     text-align: center;
     top: 10px;
@@ -61,6 +63,8 @@ input[type="text"]{
     border: none;
     font-weight: 200;
     font-size: 20px;
+    -webkit-appearance: none;
+    appearance: none;
 }
 input[type="text"]:focus{ 
     outline: none;
@@ -76,7 +80,7 @@ form{
 }
 button{ 
     width: 50px;
-    min-height: 50px;
+    height: 50px;
     border-radius: 50%;
     border-color: transparent;
     background-color: green;
@@ -84,6 +88,8 @@ button{
     border-width: 0;
     color: #fff;
     padding-bottom: 2px;
+    -webkit-appearance: none;
+    appearance: none;
 }
 footer{ 
     color: #fff;
@@ -124,22 +130,28 @@ footer{
     padding-right: 20px;
     cursor: pointer;
     font-size: 22px;
-    color: #dc3545;
+    color: green;
     transition: color 0.2s ease, transform 0.2s ease;
 }
-
+.item p{ 
+    flex: 1;
+    padding: 15px 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    word-break: break-word;
+}
 /* Hover effect */
 .item input:hover i {
     color: #a71d2a;
     transform: scale(1.1);
 }
 
-@media (max-width: 480px) {
-  .box {
-    margin: 20px auto;
-  }
-
-  p {
-    font-size: 18px;
-  }
+@media (max-width: 480px){ 
+    .item p{
+        font-size: i6px;
+    }
+    .item i{ 
+        font-size: 20px;
+    }
 }
